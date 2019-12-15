@@ -201,4 +201,7 @@
     <string name="bitbucket.com" translatable="false">bitbucket.com</string>
     <string name="notabug.org" translatable="false">notabug.org</string>
     <string name="repository_already_present">Repository already present!</string>
+    <string name="error_getting_repo_location">Error getting repository location</string>
+    <string name="command_not_transmitted">Command is not transmitted</string>
+    <string name="repo_is_not_in_list">The repository %s is not in the list of added</string>
 </resources>

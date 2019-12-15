@@ -51,6 +51,11 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.manichord.mgit.repolist.RepoListActivity" />
+            <intent-filter android:label="Синхронизировать с MGit">
+                <action android:name="android.intent.action.SYNC" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
         </activity>
         <activity
             android:name=".activities.ViewFileActivity"

@@ -182,4 +182,7 @@
     <string name="invalid_url">Неверный URL!</string>
     <string name="initialising">Инализация … </string>
     <string name="repository_already_present">Репозиторий уже добавлен!</string>
+    <string name="error_getting_repo_location">Ошибка получения расположения репозитория</string>
+    <string name="command_not_transmitted">Не передана команда</string>
+    <string name="repo_is_not_in_list">Репозиторий %s отсутствует в списке добавленных</string>
 </resources>

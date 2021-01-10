@@ -1,0 +1,27 @@
+{
+    "name": "MGit",
+    "version": "1.0.0",
+    "description": "HTML/JS part of MGit",
+    "main": "index.html",
+    "repository": "https://github.com/maks/MGit.git",
+    "author": "kb1000",
+    "license": "GPL-3.0-only",
+    "private": true,
+    "devDependencies": {
+        "autoprefixer": "^9.7.4",
+        "parcel-bundler": "^1.12.4",
+        "postcss-modules": "^1.5.0",
+        "prettier": "^1.19.1",
+        "sass": "^1.26.2"
+    },
+    "dependencies": {
+        "codemirror": "^5.52.0",
+        "highlight.js": "^9.18.1",
+        "jquery": "^3.4.1"
+    },
+    "scripts": {
+        "dev": "parcel serve src/editor.html",
+        "build": "rm -rf dist ../app/src/main/assets && parcel build --experimental-scope-hoisting --no-content-hash --public-url \"file:///android_asset/\" src/index.html && rm dist/index.html && cp -a dist ../app/src/main/assets",
+        "generate_codemirror_modes": "node --experimental-modules scripts/generate_codemirror_modes.mjs"
+    }
+}

@@ -1,21 +1,28 @@
+.hljs-theme-default {
+//    @import "highlight.js/styles/default.css";
+}
+.hljs-theme-rainbow {
+    @import "highlight.js/styles/rainbow.css";
+}
+
 body {
-  margin: 0;
+    margin: 0;
 }
 pre {
-  margin: 0;
+    margin: 0;
 }
 pre code {
-	padding: 5px;
-	line-height: 15px;
-	overflow: scroll;
+    padding: 5px;
+    line-height: 15px;
+    overflow: scroll;
     padding: 5px;
 }
 .path-block {
-        overflow: hidden;
+    overflow: hidden;
 }
 
 .commitinfo-block {
-	overflow: scroll;
+    overflow: scroll;
 }
 
 .change-type {
@@ -27,9 +34,8 @@ pre code {
     clear: both;
 }
 .info-block {
-    background: #DDD;
+    background: #ddd;
     padding: 5px;
-
 }
 .diff-block {
     margin: 5px;

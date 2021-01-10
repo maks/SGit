@@ -76,8 +76,7 @@ public class CommitDiffActivity extends SheimiFragmentActivity {
 
     private void loadFileContent() {
         mDiffContent.addJavascriptInterface(new CodeLoader(), JS_INF);
-        mDiffContent.loadDataWithBaseURL("file:///android_asset/", HTML_TMPL,
-                "text/html", "utf-8", null);
+        mDiffContent.loadUrl("file:///android_asset/local_commits_diff.html");
         WebSettings webSettings = mDiffContent.getSettings();
         webSettings.setJavaScriptEnabled(true);
         mDiffContent.setWebChromeClient(new WebChromeClient() {
@@ -269,14 +268,4 @@ public class CommitDiffActivity extends SheimiFragmentActivity {
             return Profile.getCodeMirrorTheme(getApplicationContext());
         }
     }
-
-    private static final String HTML_TMPL = "<!doctype html>"
-            + "<head>"
-            + " <script src=\"js/jquery.js\"></script>"
-            + " <script src=\"js/highlight.pack.js\"></script>"
-            + " <script src=\"js/local_commits_diff.js\"></script>"
-            + " <link type=\"text/css\" rel=\"stylesheet\" href=\"css/rainbow.css\" />"
-            + " <link type=\"text/css\" rel=\"stylesheet\" href=\"css/local_commits_diff.css\" />"
-            + "</head><body></body>";
-
 }
